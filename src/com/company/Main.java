@@ -6,7 +6,18 @@ public class Main {
 
         //Static arrays. You set the values when you create the array.
         int[] myArray = {1,2,3,4};
-        String[] myStringArray = {"hello","hi","what"};
+        String[] myStringArray = {"hello","hi","what","the ..."};
+
+        for (int i = 0; i < myArray.length; i++) {
+            System.out.println("Item #" + myArray[i]);
+            System.out.println("Name is " + myStringArray[i]);
+        }
+
+        System.out.println();
+        System.out.println();
+        System.out.println("next set of arrays");
+        System.out.println();
+        System.out.println();
 
         //More flexible arrays. You set the capacity and define the contents later.
         int[] newArray = new int[5];
