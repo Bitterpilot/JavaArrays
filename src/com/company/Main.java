@@ -4,11 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Static arrays. you set the values when you create the array
+        //Static arrays. You set the values when you create the array.
         int[] myArray = {1,2,3,4};
         String[] myStringArray = {"hello","hi","what"};
 
-        //More flexible arrays. you set the capacity
+        //More flexible arrays. You set the capacity and define the contents later.
         int[] newArray = new int[5];
         String[] newStringArray = new String[5];
 
@@ -18,11 +18,17 @@ public class Main {
         newArray[2] = 5;
         newArray[3] = 1;
         newArray[4] = 2;
-        newArray[5] = 6;
 
-        //Arrays have length
+        newStringArray[0] = "Dave";
+        newStringArray[1] = "Sara";
+        newStringArray[2] = "Jim";
+        newStringArray[3] = "Jack";
+        newStringArray[4] = "Ali";
+
+        //Arrays have lengthS
         for (int i = 0; i < newArray.length; i++) {
             System.out.println("Item #" + newArray[i]);
+            System.out.println("Name is " + newStringArray[i]);
         }
     }
 }
