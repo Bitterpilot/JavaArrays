@@ -51,12 +51,19 @@ public class Main {
         animals.add("Pig");
         animals.add("Cow");
         animals.add("Parrot");
+        animals.add("Cheetah");
         animals.add(30);
+        animals.add(0, "bird");
 
-        System.out.println("line print:" + animals.get(0));
+        System.out.println("size: " + animals.size());
 
-        for (int i = 0; i < animals.size() ; i++) {
-            System.out.println("for loop 1: " + animals.get(i));
+        animals.remove(4);
+        animals.remove("Pig");
+
+        if (animals.contains("horse")){
+            animals.remove("horse");
+        }else{
+            System.out.println("Object invalid");
         }
 
         //clever for loop
